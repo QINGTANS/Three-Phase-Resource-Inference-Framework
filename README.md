@@ -1,8 +1,9 @@
-# Three-Step-Resource-Inference-Framework
-Three-Step-Resource-Inference-Framework addresses the problems of assigning resource attributes to event logs that lack resource information. 
-It contains two phases: the **Extraction** phase and the **Inference** phase.
+# Three-Phase-Resource-Inference-Framework
+Three-Phase-Resource-Inference-Framework addresses the problems of assigning resource attributes to event logs that lack resource information. 
+It contains three phases: the **Extraction** phase, the **Prediction** phase, and the **Inference** phase.
 In the **Extraction** phase, it extracts four domains and train two logistic regression classifiers from numbers of train logs.
-In the **Inference** phase, it applies the domains and classifiers to infer resource attributes for event logs without the resource information.
+In the **Prediction** phase, it predicts the number of resources for test logs.
+In the **Inference** phase, it applies the domains, classifiers, and the predicted resource number to infer resource attributes for event logs without the resource information.
 ![Figure 1](three-step-resource-inference-framework.png)
 
 ## Prerequisites
@@ -11,7 +12,7 @@ In the **Inference** phase, it applies the domains and classifiers to infer reso
 3. The outputs will be stored automatically in the default package (named as **generated_log_set**).
 4. You should install **conda** that will be applied to create the environment.
 
-## How to run the Three-Step-Resource-Inference-Framework
+## How to run the Three-Phase-Resource-Inference-Framework
 You should follow these steps:
 1. Download the whole folder and open the terminal at this folder.
 2. Run `conda create -n py311 python=3.11.4` to create the python environment.
