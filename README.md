@@ -4,7 +4,7 @@ It contains three phases: the **Extraction** phase, the **Prediction** phase, an
 In the **Extraction** phase, it extracts four domains and train two logistic regression classifiers from numbers of train logs.
 In the **Prediction** phase, it predicts the number of resources for test logs.
 In the **Inference** phase, it applies the domains, classifiers, and the predicted resource number to infer resource attributes for event logs without the resource information.
-
+![Figure 1](approach_structure2.png)
 
 ## Prerequisites
 1. You should add all train logs in the **train_log_set** package, for each train log, it should contain at least contain case (named as **case_id**), activity (named as **activity_type**), timestamp (named as **timestamp**), and resource attribute (named as **agent_id**).
